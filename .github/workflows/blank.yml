@@ -14,17 +14,12 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '9.3.1'
-      - name: Generate Keystore
-        run: keytool -genkey -v -keystore release.keystore -storepass fatorty2026 -alias fatortykey -keypass fatorty2026 -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Fatorty App,O=Fatorty,C=LY"
+      - name: Generate Upload Keystore
+        run: keytool -genkey -v -keystore my-upload-key.jks -storepass android -alias my-key-alias -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Fatorty App,O=Fatorty,C=LY"
       - name: Build Release APK
         run: gradle assembleRelease --no-daemon
-      - name: Sign Release APK
-        run: |
-          BUILD_TOOLS=$(find $ANDROID_HOME/build-tools -maxdepth 1 | sort -V | tail -n 1)
-          $BUILD_TOOLS/zipalign -v -p 4 app/build/outputs/apk/release/app-release-unsigned.apk app-release-aligned.apk
-          $BUILD_TOOLS/apksigner sign --ks release.keystore --ks-pass pass:fatorty2026 --key-pass pass:fatorty2026 --out Faturati-Official-Release.apk app-release-aligned.apk
       - name: Upload Official Release APK
         uses: actions/upload-artifact@v4
         with:
           name: fatorty-official-release
-          path: Faturati-Official-Release.apk
+          path: app/build/outputs/apk/release/*.apk
