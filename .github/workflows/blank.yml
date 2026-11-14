@@ -17,11 +17,21 @@ jobs:
       - name: Generate Upload Keystore
         run: |
           keytool -genkey -v -keystore my-upload-key.jks -storepass android -alias upload -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Fatorty App,O=Fatorty,C=LY"
+          echo "MYAPP_UPLOAD_STORE_FILE=my-upload-key.jks" >> gradle.properties
+          echo "MYAPP_UPLOAD_KEY_ALIAS=upload" >> gradle.properties
+          echo "MYAPP_UPLOAD_STORE_PASSWORD=android" >> gradle.properties
+          echo "MYAPP_UPLOAD_KEY_PASSWORD=android" >> gradle.properties
           echo "storePassword=android" >> gradle.properties
           echo "keyPassword=android" >> gradle.properties
           echo "keyAlias=upload" >> gradle.properties
           echo "storeFile=my-upload-key.jks" >> gradle.properties
       - name: Build Release APK
+        env:
+          STORE_PASSWORD: android
+          KEY_PASSWORD: android
+          KEY_ALIAS: upload
+          MYAPP_UPLOAD_STORE_PASSWORD: android
+          MYAPP_UPLOAD_KEY_PASSWORD: android
         run: gradle assembleRelease --no-daemon -PstorePassword=android -PkeyPassword=android -PkeyAlias=upload
       - name: Upload Official Release APK
         uses: actions/upload-artifact@v4
