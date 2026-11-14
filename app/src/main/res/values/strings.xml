@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">فاتورتي</string>
+
+    <!-- Navigation -->
+    <string name="nav_editor">تصميم الفاتورة</string>
+    <string name="nav_preview">معاينة وتصدير</string>
+    <string name="nav_pro">النسخة الكاملة</string>
+
+    <!-- Store Info Section -->
+    <string name="section_store_info">بيانات المتجر</string>
+    <string name="store_logo_add">إضافة شعار</string>
+    <string name="store_logo_change">تغيير الشعار</string>
+    <string name="store_logo_remove">إزالة الشعار</string>
+    <string name="store_logo_cd">شعار المتجر</string>
+    <string name="store_name_label">اسم المتجر</string>
+    <string name="store_name_placeholder">مثال: متجر أناقة للتسوق</string>
+    <string name="store_phone_label">رقم الهاتف أو حساب التواصل (اختياري)</string>
+    <string name="store_phone_placeholder">مثال: 0910000000</string>
+    <string name="currency_label">العملة</string>
+    <string name="store_more_details">تفاصيل إضافية</string>
+
+    <!-- Customer & Invoice Details -->
+    <string name="section_invoice_meta">تفاصيل الفاتورة والعميل</string>
+    <string name="customer_name_label">اسم العميل (اختياري)</string>
+    <string name="customer_name_placeholder">مثال: أحمد محمد</string>
+    <string name="invoice_number_label">رقم الفاتورة</string>
+    <string name="regenerate_invoice_number_cd">توليد رقم فاتورة جديد</string>
+
+    <!-- Products Section -->
+    <string name="section_products">قائمة المنتجات والأسعار</string>
+    <string name="products_empty_title">لا توجد منتجات بعد</string>
+    <string name="products_empty_subtitle">أضف منتجاتك لحساب المجموع الإجمالي تلقائياً</string>
+    <string name="product_name_label">اسم المنتج</string>
+    <string name="product_name_placeholder">مثال: عطر فاخر 100 مل</string>
+    <string name="product_qty_label">الكمية</string>
+    <string name="product_price_label">السعر</string>
+    <string name="product_subtotal_label">الإجمالي:</string>
+    <string name="add_product_button">إضافة منتج</string>
+    <string name="delete_product_cd">حذف المنتج</string>
+    <string name="increase_qty_cd">زيادة الكمية</string>
+    <string name="decrease_qty_cd">إنقاص الكمية</string>
+
+    <!-- Extra Amounts & Notes -->
+    <string name="section_summary_extras">التوصيل والخصم والملاحظات</string>
+    <string name="delivery_fee_label">رسوم التوصيل</string>
+    <string name="discount_label">الخصم</string>
+    <string name="invoice_notes_label">ملاحظة أسفل الفاتورة (اختياري)</string>
+    <string name="invoice_notes_placeholder">شكراً لتسوقكم من متجرنا!</string>
+
+    <!-- Totals & Bar -->
+    <string name="subtotal_title">المجموع الفرعي</string>
+    <string name="grand_total_title">المجموع الإجمالي</string>
+    <string name="items_count_format">%d منتجات</string>
+    <string name="preview_and_export_cta">معاينة وتصدير</string>
+
+    <!-- Preview & Templates -->
+    <string name="choose_template_title">اختر قالب الفاتورة</string>
+    <string name="template_classic">الكلاسيكي النظيف</string>
+    <string name="template_luxury">العصري الفاخر</string>
+    <string name="template_boutique">البوتيك الدافئ</string>
+    <string name="template_tech">المتجر التقني</string>
+    <string name="badge_free">مجاني</string>
+    <string name="badge_pro">احترافي</string>
+    <string name="locked_template_hint">هذا القالب متاح في النسخة الكاملة. أدخل كود التفعيل لفتحه.</string>
+    <string name="unlock_now_button">فتح القوالب الآن</string>
+
+    <!-- Invoice Document Labels -->
+    <string name="invoice_doc_title">فاتورة مبيعات</string>
+    <string name="invoice_doc_number">رقم الفاتورة:</string>
+    <string name="invoice_doc_date">التاريخ:</string>
+    <string name="invoice_doc_customer">العميل:</string>
+    <string name="invoice_col_item">المنتج</string>
+    <string name="invoice_col_qty">الكمية</string>
+    <string name="invoice_col_price">السعر</string>
+    <string name="invoice_col_total">الإجمالي</string>
+    <string name="invoice_default_store_name">متجرك الإلكتروني</string>
+    <string name="invoice_default_item_name">منتج</string>
+    <string name="invoice_watermark_text">تم التصميم بواسطة تطبيق فاتورتي</string>
+
+    <!-- Export & Share -->
+    <string name="export_share_title">تصدير ومشاركة الفاتورة</string>
+    <string name="export_share_primary">تصدير ومشاركة كصورة</string>
+    <string name="share_whatsapp">واتساب</string>
+    <string name="share_facebook">فيسبوك</string>
+    <string name="save_to_gallery">حفظ بالمعرض</string>
+    <string name="share_chooser_title">مشاركة الفاتورة عبر</string>
+    <string name="export_success_saved">تم حفظ صورة الفاتورة عالية الجودة في المعرض</string>
+    <string name="export_error_generic">تعذر تصدير الفاتورة، حاول مرة أخرى</string>
+    <string name="export_empty_warning">أضف منتجاً واحداً على الأقل أو أدخل اسم المتجر قبل التصدير</string>
+
+    <!-- Pro Activation Section -->
+    <string name="pro_title">تفعيل النسخة الكاملة</string>
+    <string name="pro_subtitle">ارتقِ بمظهر متجرك مع قوالب فاخرة وإزالة شعار التطبيق من الفواتير</string>
+    <string name="pro_status_active">النسخة الكاملة مفعّلة بنجاح</string>
+    <string name="pro_status_free">أنت تستخدم النسخة المجانية حالياً</string>
+    <string name="pro_benefit_templates">فتح 3 قوالب فواتير احترافية إضافية تناسب جميع المتاجر</string>
+    <string name="pro_benefit_watermark">إزالة شعار واسم تطبيق فاتورتي من أسفل الفاتورة بالكامل</string>
+    <string name="pro_benefit_quality">تصدير غير محدود بصيغة PNG عالية الدقة للمشاركة الفورية</string>
+    <string name="activation_code_label">كود التفعيل</string>
+    <string name="activation_code_placeholder">أدخل كود التفعيل (مثال: LIBYA2026)</string>
+    <string name="activate_button">تفعيل الآن</string>
+    <string name="activation_error_empty">يرجى إدخال كود التفعيل</string>
+    <string name="activation_error_invalid">كود التفعيل غير صحيح، جرب: LIBYA2026</string>
+    <string name="activation_success_message">تم تفعيل النسخة الكاملة! أصبحت جميع القوالب مفتوحة وتمت إزالة الشعار.</string>
+    <string name="deactivate_demo_button">العودة للنسخة المجانية (للمعاينة)</string>
+</resources>
